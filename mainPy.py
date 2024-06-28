@@ -88,7 +88,7 @@ def displayNewsData():
     '''
     #Clearing the previous news data
     resetWidget = ttk.Label(mainWindow, font=("Arial", 20), background = "lightblue", justify = 'right')
-    resetWidget.place(x=60, y=185, width=700, height=550, anchor="nw")
+    resetWidget.place(x=60, y=185, width=700, height=540, anchor="nw")
 
     #Filtering the search inpnut to remove spaces preventing errors
     searchInput = newsSearchInput.get().replace(' ','',-1)
@@ -220,7 +220,7 @@ weatherLabelLow.place(x=1003, y=280, anchor="w")
 
 #Creating the news label and placing it
 newsLabel = ttk.Label(mainWindow, font=("Arial", 20), background="lightblue", justify = 'right')
-newsLabel.place(x=60, y=76, width=700, height=650, anchor='nw')
+newsLabel.place(x=60, y=76, width=700, height=640, anchor='nw')
 
 #Creating the news title label and placing it
 newsLabelText =  ttk.Label(mainWindow, text="News", font=("Arial", 20), background = "lightblue")
